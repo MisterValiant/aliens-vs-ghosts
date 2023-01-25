@@ -6395,9 +6395,9 @@ self.C3_ExpressionFuncs = [
 		() => -717750023016447,
 		() => "chat",
 		p => {
-			const n0 = p._GetNode(0);
+			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
-			return () => ((("https://valiant-games.000webhostapp.com/insert.php?password=testingglobalchat&username=" + n0.ExpObject()) + "&chat=") + n1.ExpObject());
+			return () => ((("https://valiant-games.000webhostapp.com/insert.php?password=testingglobalchat&username=" + v0.GetValue()) + "&chat=") + n1.ExpObject());
 		},
 		() => "POST",
 		() => "Sent!",
